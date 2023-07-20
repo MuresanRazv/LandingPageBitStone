@@ -8,30 +8,38 @@ body {
 }
 
 .container {
+    /* spacing */
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    padding: var(--def-padding);
 }
 
 header {
+    /* spacing */
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 30px;
     padding: var(--def-padding);
-    background-color: white;
     margin-bottom: 20px;
+
+    /* styling */
+    background-color: white;
+
 }
 
 nav ul {
+    /* spacing */
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 nav li {
+    /* spacing */
     display: inline-block;
     margin-right: 10px;
 }
@@ -70,18 +78,82 @@ nav li:last-of-type {
 }
 
 .about__intro {
+    /* spacing */
+    display: flex;
     min-width: calc(60% - 0.5rem);
     height: 100%;
     border-radius: 1rem;
     margin-right: 0.5rem;
-    background-image: url("/images/about_img.jpg");
+
+    /* styling */
+    background-image: url("/images/about_img_blurred.png");
+    background-size: cover;
 }
 
 .about__intro-content {
-    padding: 1rem;
+    /* spacing */
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__intro-content h2, p {
+    /* spacing */
+    width: 70%;
+
+    /* styling */
+    color: white;
+}
+
+.about__intro-content h2 {
+    /* styling */
+    font-size: 1.25em;
+}
+
+.about__intro-content p {
+    /* styling */
+    font-size: 1em;
+}
+
+.about__intro-social_btn {
+    /* spacing */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 50%;
+    margin-top: auto;
+    padding-bottom: 1.5rem;
+    gap: 1em;
+}
+
+.contact-btn, .social_media-btn {
+    /* spacing */
+    padding: 0.7em;
+    border-radius: 1.5em;
+    border: 0;
+
+    /* styling */
+    background-color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-btn {
+    /* spacing */
+    width: 9em;
+
+    /* styling */
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.contact-btn:hover, .social_media-btn:hover {
+    /* styling */
+    background-color: black;
+    color: white;
 }
 
 .about img {
+    /* spacing */
     min-width: 40%;
     height: 100%;
     border-radius: 1rem;
@@ -109,5 +181,9 @@ nav li:last-of-type {
 
     .about img {
         width: 100%;
+    }
+
+    .about__intro-social_btn {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
