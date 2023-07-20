@@ -1,6 +1,8 @@
 body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 :root {
@@ -18,13 +20,12 @@ body {
 
 header {
     /* spacing */
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
     height: 30px;
     padding: var(--def-padding);
-    margin-bottom: 20px;
 
     /* styling */
     background-color: white;
