@@ -150,16 +150,19 @@ nav li:last-of-type {
     background-color: white;
     color: black;
     font-family: 'Roboto', sans-serif;
-    width: 2rem;
+    width: 1.2rem;
+    text-align: center;
 }
 
 .contact-btn {
     /* spacing */
-    width: 9em;
+    width: max-content;
+    padding: 0.7em;
 
     /* styling */
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .contact-btn:hover, .social_media-btn:hover {
