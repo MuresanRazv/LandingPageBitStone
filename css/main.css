@@ -3,6 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     max-width: 900px;
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -97,7 +98,7 @@ nav li:last-of-type {
     margin-right: 0.5rem;
 
     /* styling */
-    background-image: url("/images/about_img_blurred.png");
+    background-image: url("/images/formal_photo_of_me2_blurred.png");
     background-size: cover;
 }
 
@@ -241,7 +242,7 @@ nav li:last-of-type {
     /* spacing */
     padding: var(--def-padding);
     gap: 10px;
-    width: 100%;
+    width: max-content;
 
     /* styling */
     color: white;
@@ -249,8 +250,70 @@ nav li:last-of-type {
 
 .contact-box {
     /* spacing */
-    margin-left: auto;
     padding: var(--def-padding);
+    margin-right: auto;
+}
+
+.contact-form__input {
+    /* spacing */
+    height: 2.5rem;
+    width: clamp(120px, 50vw, 420px);
+    padding: 0 1.25rem;
+    margin: 0.625rem auto;
+
+    /* styling */
+    transition: all 250ms;
+    border: 0;
+    border-radius: 1rem;
+}
+
+.contact-form__submit {
+    /* spacing */
+    height: 2.5rem;
+    width: clamp(60px, 25vw, 210px);
+    padding: 0 1.25rem;
+    margin: 0.625rem auto;
+
+    /* styling */
+    transition: all 250ms;
+    border: 0;
+    border-radius: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+/* FOOTER */
+
+footer {
+    /* styling */
+    border-radius: 1rem;
+    background-color: black;
+
+    /* spacing */
+    height: 3rem;
+    margin: var(--def-padding);
+    margin-bottom: 0;
+}
+
+.footer-rights {
+    color: gray;
+    padding: var(--def-padding);
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+}
+
+footer .social_media-btn {
+    background-color: black;
+    color: white;
+}
+
+footer .social_media-btn:hover {
+    background-color: white;
+    color: black;
 }
 
 /* RESPONSIVENESS */
@@ -283,10 +346,13 @@ nav li:last-of-type {
 
     .contact {
         flex-wrap: wrap;
+        height: max-content;
     }
 
     .contact-box {
-        margin-right: auto;
-        margin-left: 0;
+    }
+
+    .contact-form__input {
+        width: clamp(200px, 35vw, 420px);
     }
 }

@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Landing Page</title>
 </head>
-<body>
+<body id="start">
     <!-- HEADER START -->
-    <header>
+    <header id="header">
         <div class="container">
             <h3>Razvan</h3>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#start">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,12 +28,12 @@
     <!-- HEADER END -->
 
     <!-- ABOUT START -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__intro">
             <div class="about__intro-content">
                 <div>
-                    <h2>Hey, I'm Abo, a product designer with 7 years of experience</h2>
-                    <p>I care a lot about using design for positive impact, and enjoy creating user-centric, delightful, and human experiences</p>
+                    <h2>Hey, I'm Razvan</h2>
+                    <p>Highly motivated Math/Computer Science student on my second year of college at UBB Cluj-Napoca, mainly coding in Java/Python. Seeking to grow my knowledge and skills on a daily basis.</p>
                 </div>
                 <div class="about__intro-social_btn">
                     <button type="button" class="contact-btn">Contact me</button>
@@ -44,12 +44,12 @@
                 </div>
             </div>
         </div>
-        <img src="images/about_img.jpg" alt="a picture of myself" loading="lazy"/>
+        <img src="images/formal_photo_of_me2.jpg" alt="a picture of myself" loading="lazy"/>
     </section>
     <!-- ABOUT END -->
 
     <!-- WORKS START -->
-    <section class="works">
+    <section class="works" id="works">
         <div class="works_card" style="background-image: url('images/geneticalalgorithm.jpg')">
             <div class="works_card__about">
                 <h2>Generation Algorithm</h2>
@@ -78,17 +78,29 @@
     <!-- WORKS END -->
 
     <!-- CONTACT START -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <form action="" method="" class="contact-form"><h2>Contact</h2>
-            Name: <input name="name" type="text" placeholder="Full Name"/> <br />
-            Email: <input name="email" type="email" placeholder="Email"/> <br />
-            Phone Number: <input name="phone" type="tel" placeholder="Phone Number"/> <br />
-            <input type="submit" value="Submit" />
+            <input name="name" type="text" placeholder="Full Name" class="contact-form__input"/> <br />
+            <input name="email" type="email" placeholder="Email" class="contact-form__input"/> <br />
+            <input name="phone" type="tel" placeholder="Phone Number" class="contact-form__input"/> <br />
+            <input type="submit" value="Submit" class="contact-form__submit"/>
         </form>
-        <div class="contact-box">
-            <p>Phone number</p>
-        </div>
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2733.0021873285364!2d23.59562507679883!3d46.76485334572362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c23f16099c7%3A0x56e1b6e8127b2106!2sBitStone!5e0!3m2!1sro!2sro!4v1689940943119!5m2!1sro!2sro"
+                width="100%" style="border:0; border-radius: 1rem; min-height: 300px"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <!-- CONTACT END -->
+
+    <!-- FOOTER START -->
+    <footer>
+        <div class="footer-container">
+            <p class="footer-rights">All rights reserved.</p>
+            <button class="social_media-btn" style="margin-left: auto"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></button>
+            <button class="social_media-btn"><i class="fa fa-github fa-lg" aria-hidden="true"></i></button>
+            <button class="social_media-btn" style="margin-right: 0.5rem"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></button>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
 </body>
 </html>
