@@ -331,6 +331,10 @@ footer {
     height: 3rem;
 }
 
+footer .social_media-btn:first-of-type {
+    margin-left: auto;
+}
+
 footer .social_media-btn {
     background-color: black;
     color: white;
