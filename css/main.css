@@ -9,6 +9,8 @@ body {
     --def-padding: 1rem 1rem 1rem 1rem;
 }
 
+/* HEADER */
+
 .container {
     /* spacing */
     display: flex;
@@ -71,6 +73,8 @@ nav li a:hover {
 nav li:last-of-type {
     margin-right: 0;
 }
+
+/* ABOUT */
 
 .about {
     /* positioning */
@@ -168,6 +172,8 @@ nav li:last-of-type {
     object-fit: cover;
 }
 
+/* WORKS */
+
 .works {
     /* spacing */
     display: grid;
@@ -219,9 +225,35 @@ nav li:last-of-type {
     margin: 2rem 2rem 2rem 2rem;
 }
 
-.contact {
+/* CONTACT */
 
+.contact {
+    /* spacing */
+    display: flex;
+    margin: var(--def-padding);
+
+    /* styling */
+    background-color: black;
+    border-radius: 1rem;
 }
+
+.contact-form {
+    /* spacing */
+    padding: var(--def-padding);
+    gap: 10px;
+    width: 100%;
+
+    /* styling */
+    color: white;
+}
+
+.contact-box {
+    /* spacing */
+    margin-left: auto;
+    padding: var(--def-padding);
+}
+
+/* RESPONSIVENESS */
 
 @media (300px < width < 800px) {
     .about {
@@ -247,5 +279,14 @@ nav li:last-of-type {
         grid-template-columns: 1fr;
         grid-auto-rows: 1fr 1fr 1fr 1fr;
         height: 1200px;
+    }
+
+    .contact {
+        flex-wrap: wrap;
+    }
+
+    .contact-box {
+        margin-right: auto;
+        margin-left: 0;
     }
 }
