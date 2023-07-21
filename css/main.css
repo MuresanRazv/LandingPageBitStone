@@ -16,6 +16,12 @@ body {
     align-items: center;
     margin: 0 auto;
     padding: var(--def-padding);
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+header h3 {
+    margin: 0;
 }
 
 header {
@@ -24,7 +30,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 30px;
+    height: max-content;
     padding: var(--def-padding);
 
     /* styling */
@@ -52,7 +58,7 @@ nav li a {
 
     /* spacing */
     padding: 0.25rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 
 nav li a:hover {
@@ -74,7 +80,7 @@ nav li:last-of-type {
 
     /* spacing */
     height: 400px;
-    margin-top: 50px;
+    margin-top: 1rem;
     padding: var(--def-padding);
 }
 
