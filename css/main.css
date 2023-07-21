@@ -6,7 +6,7 @@ body {
 }
 
 :root {
-    --def-padding: 0 10px 0 10px;
+    --def-padding: 1rem 1rem 1rem 1rem;
 }
 
 .container {
@@ -167,6 +167,12 @@ nav li:last-of-type {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: var(--def-padding);
+    gap: 10px;
+    background-size: 100% 100%;
+
+    /* styling */
+    height: 844px;
 }
 
 .works_card {
@@ -174,8 +180,37 @@ nav li:last-of-type {
     margin: 0 auto;
 
     /* styling */
-
+    width: 100%;
+    height: 100%;
     border-radius: 1rem;
+}
+
+.works_card__about {
+    padding: var(--def-padding);
+    height: auto;
+}
+
+.works_card__about h2 {
+    /* spacing */
+    padding: var(--def-padding);
+
+    /* styling */
+    background-color: white;
+    border-radius: 1em;
+    width: max-content;
+}
+
+.works_card__about p {
+    /* spacing */
+    padding: var(--def-padding);
+
+    /* styling */
+    border-radius: 1em;
+    color: white;
+}
+
+.works-button {
+    margin: 2rem 2rem 2rem 2rem;
 }
 
 .contact {
@@ -205,5 +240,6 @@ nav li:last-of-type {
     .works {
         grid-template-columns: 1fr;
         grid-auto-rows: 1fr 1fr 1fr 1fr;
+        height: 1200px;
     }
 }
