@@ -101,7 +101,7 @@ nav li:last-of-type {
     margin-right: 0.5rem;
 
     /* styling */
-    background-image: url("images/formal_photo_of_me2_blurred.png");
+    background-image: url("../images/formal_photo_of_me2_blurred.png");
     background-size: cover;
 }
 
